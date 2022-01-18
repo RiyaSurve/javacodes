@@ -23,6 +23,7 @@ class ListIteratorDemo{
 		v.add(30);
 		v.add(40);
 		v.add(50);
+		v.add(70);
 
 
 		ListIterator e = v.listIterator();
