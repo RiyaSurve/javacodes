@@ -1,0 +1,32 @@
+class DaemonDemo extends Thread{
+
+
+	public void run(){
+	
+	for(int i=0;i<100;i++){
+	
+	System.out.println(Thread.currentThread().getName());
+	
+	}
+	
+	
+	}
+}
+
+class Demo{
+
+public static void main(String[] args){
+
+	DaemonDemo dt1 = new DaemonDemo();
+	DaemonDemo dt2 = new DaemonDemo();
+	DaemonDemo dt3 = new DaemonDemo();
+
+	dt1.start();
+	dt2.start();
+	dt3.start();
+
+
+}
+
+
+}
