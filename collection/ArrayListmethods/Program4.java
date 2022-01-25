@@ -15,6 +15,7 @@
  * Object class cannot be converted to ArrayList.So we need to typecast it.
  *
  * 8.clear :clears the array list completely.
+ * 9.set(index,obj) :Replace a value with that particular index and object
  * */
 
 
@@ -68,8 +69,15 @@ class ArrayListMethods{
 	al2.clear();
 	System.out.println(al2);
 
+	
+	al.set(3,"IBM"); //replaces the value at index 3
+
+	
+
+	System.out.println("ArrayList al = " + al);  //It will print as it is
 	}
 
+	
 }
 /*Output:
  *[Microsoft, Google, Tesla, Amazon, Apple, Google]
@@ -82,6 +90,8 @@ Removed element :Oracle
 [Microsoft, Tesla, Amazon, Apple, Google]
 [Microsoft, Tesla, Amazon, Apple, Google]
 []
+ArrayList al = [Microsoft, Tesla, Amazon, IBM, Google]
+
 
  *
  * */
